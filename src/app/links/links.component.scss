@@ -1,0 +1,64 @@
+.text-center {
+    padding-top: 100px; /* Add desired margin from the header */
+    padding-bottom: 50px; /* Add desired margin from the content below */
+    color: #000; /* Add desired text color */
+    h1 {
+      font-size: 36px; /* Add desired font size for heading */
+      font-weight: bold; /* Add desired font weight for heading */
+    }
+    p {
+      font-size: 18px; /* Add desired font size for paragraph */
+      margin-top: 20px; /* Add desired margin between heading and paragraph */
+    }
+  }
+  
+.links-container {
+    
+    margin-bottom: 17rem;
+    display: flex;
+    justify-content: center;
+  
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .link-item {
+      margin-bottom: 2rem;
+      max-width: 300px;
+      text-align: center;
+      
+  
+      i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+  
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        font-size: 2rem;
+        color: #666;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+  
+      a {
+        font-size: 1rem;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #007bff;
+        }
+      
+      }
+    }
+  }
+  

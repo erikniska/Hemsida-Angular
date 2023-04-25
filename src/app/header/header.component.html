@@ -1,0 +1,14 @@
+<header >
+    <div class="container">
+      <h1 class="namn-container">{{ title }}</h1>
+      <nav> 
+        <ul class="nav">
+            <li class="nav-item" *ngFor="let item of navItems" (click)="onNavItemClicked(item)">
+              <a class="nav-link">{{ item }}</a>
+            </li>
+          </ul>          
+      </nav>
+    </div>
+  </header>
+  
+  
