@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, HostListener, ElementRef } from '@angular/core';
 import { aboutMeText } from '../experience';
 
 @Component({
@@ -9,16 +9,15 @@ import { aboutMeText } from '../experience';
 export class AboutMeComponent {
 
   aboutMeText: string = aboutMeText;
-  imagePath: string = "assets/images/profile.jpg";
+  
 
   isImageLoaded: boolean = false; 
 
-  constructor() { }
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
+
 
   ngOnInit() {}
     
-  onImageLoaded() {
-    this.isImageLoaded = true;
-  }
+ 
 
 }

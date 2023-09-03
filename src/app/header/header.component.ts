@@ -9,26 +9,13 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent {
  
-  title: string = 'Erik Niska';
-  navItems: string[] = ['Hem', 'Om mig', 'CV', 'Länkar',];
 
   constructor(private router: Router) { } 
 
   onNavItemClicked(item: string) {
-    if (item === 'Om mig') {
-      this.router.navigate(['/about-me']); 
-    }
-    
-    else if (item === 'Hem') {
-      this.router.navigate(['/']); 
-    }
-    else if (item == 'CV') {
-      this.router.navigate(['/experience']);
-    }
-    else if (item == 'Länkar'){
-      this.router.navigate(['/links']);
-    }
-    
-  }
 
+  }
+  navigateToHomepage() {
+    this.router.navigate(['/']); // Navigate to the homepage
+}
 }

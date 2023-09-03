@@ -1,14 +1,10 @@
 <section class="container">
   <div class="row">
-    <div class="col-md-6 mx-auto text-center">
-      <h2>Välkommen till min hemsida!</h2>
-      <p>{{ homeText }}</p>
-    </div>
-    <div class="col-md-6 mx-auto text-center">
-      <img class="img-fluid" [src]="'assets/images/CVPNG.png'" alt="Profile Picture" 
-     (load)="onImageLoaded()"
-     [ngClass]="{'slide-in': isImageLoaded}">
-    </div>
+    <div class="col-md-6 mx-auto middle-section animate__animated animate__bounceInUp">
+      <div class="animation-container">
+        <h2 class="content">ERIK NISKA</h2>
+        <p class="content">{{ homeText }}</p>
+      </div>
+    </div>    
   </div>
 </section>
-

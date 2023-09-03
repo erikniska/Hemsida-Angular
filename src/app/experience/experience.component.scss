@@ -1,16 +1,90 @@
 .container {
-    padding-bottom: 25px; 
-  }
-.cv {
-    text-align: center; 
-  }
-  
-  .cv a {
-    display: inline-block; 
-    margin-right: 10px; 
-  }
+  padding: 0; /* Reset padding */
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000c2;
+}
 
-  
-  
+.container-h2 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+ 
+  color: white;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fourth-button {
+  width: 250px;
+  height: 70px;
+  border: 4px rgba(255, 255, 255, 0.487) solid;
+  position: relative;
+  color: rgba(255, 255, 255, 0.487);
+  padding: 35px 10px 10px 12px;
+  display: inline-flex; /* Display buttons inline */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-decoration: none; /* Remove underline from the link */
+  margin: 0.5rem; /* Add some spacing between buttons */
+  transition: all 0.3s ease-in;
+}
+
+.fourth-button:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-left: 3px rgba(255, 255, 255, 0.487) solid;
+  border-top: 3px rgba(255, 255, 255, 0.487) solid;
+  transition: all 0.3s ease-in;
+}
+
+.fourth-button:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  border-right: 3px rgba(255, 255, 255, 0.487) solid;
+  border-bottom: 3px rgba(255, 255, 255, 0.487) solid;
+  transition: all 0.2s ease-in;
+}
+
+.fourth-button:hover::before {
+  width: 50px;
+  height: 50px;
+  border-left: 3px rgb(255, 255, 255) solid;
+  border-top: 3px rgb(255, 255, 255) solid;
+}
+
+.fourth-button:hover::after {
+  width: 50px;
+  height: 50px;
+  border-right: 3px rgb(255, 255, 255) solid;
+  border-bottom: 3px rgb(255, 255, 255) solid;
+}
+
+.fourth-button:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 25px 1px rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
 
   
